@@ -1,0 +1,5 @@
+build
+node_modules
+resources
+sass/etc/*.scss
+.svn

@@ -1,0 +1,89 @@
+{
+    "name": "@perryjohnson/extjs-pkg-github",
+    "version": "0.0.1",
+    "displayName": "ExtJs GitHub API Package",
+    "description": "ExtJS GitHub API Package",
+    "license": "SEE LICENSE IN LICENSE.txt",
+    "author": {
+        "name": "Scott Meesseman"
+    },
+    "bugs": {
+        "email": "smeesseman@pjats.com",
+        "url": "https://issues.development.pjats.com/extjs-pkg-github/ticket/1"
+    },
+    "homepage": "https://issues.development.pjats.com/extjs-pkg-github",
+    "repository": {
+        "type": "svn",
+        "url": "https://svn.development.pjats.com/repos/pja/extjs-pkg-github/trunk"
+    },
+    "devDependencies": {
+        "@perryjohnson/app-publisher": "^1.5.12"
+    },
+    "scripts": {
+        "app-publish": "app-publisher -p ps",
+        "app-publish-dry": "app-publisher -p ps --dry-run"
+    },
+    "keywords": [
+        "sencha extjs",
+        "github",
+        "api"
+    ],
+    "publishConfig": {
+        "access": "public"
+    },
+    "files": [
+        "src"
+    ],
+    "sencha": {
+        "name": "github",
+        "namespace": "Ext",
+        "type": "code",
+        "creator": "spmeesseman",
+        "summary": "Package wrapper for Font Awesome",
+        "detailedDescription": "Package wrapper for Font Awesome",
+        "version": "5.8.1",
+        "compatVersion": "5.1.0",
+        "format": "1",
+        "slicer": null,
+        "output": "${framework.dir}/build/packages/${package.name}",
+        "local": true,
+        "resource": {
+            "paths": ""
+        },
+        "github": {
+            "token": null
+        },
+        "resources": [
+            {
+                "path": "${package.dir}/resources",
+                "output": "shared"
+            }
+        ],
+        "sass": {
+            "namespace": "Ext",
+            "etc": [
+                "${package.dir}/sass/etc"
+            ],
+            "var": [
+                "${package.dir}/sass/var"
+            ],
+            "src": [
+                "${package.dir}/sass/src",
+                "${package.dir}/sass/src/main.scss"
+            ]
+        },
+        "classpath": [
+            "${package.dir}/src"
+        ],
+        "overrides": [
+            "${package.dir}/overrides"
+        ],
+        "requires": [
+            "core"
+        ],
+        "ignore": [
+            "(^|/)CVS(/?$|/.*?$)"
+        ]
+    },
+    "dependencies": {}
+}
