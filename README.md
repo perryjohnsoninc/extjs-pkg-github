@@ -18,7 +18,7 @@
 
 To install this package, run the following command:
 
-    npm install @spmeesseman/extjs-pkg-github
+    npm install @perryjohnson/extjs-pkg-github
 
 ## Usage
 
